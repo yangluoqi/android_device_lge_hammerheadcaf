@@ -21,7 +21,7 @@ USE_O3_OPTIMIZATIONS := true
 SUPPRES_UNUSED_WARNING := true
 KRAIT_TUNINGS := true
 ENABLE_GCCONLY := true
-#GRAPHITE_OPTS := true
+GRAPHITE_OPTS := true
 STRICT_ALIASING := true
 #BOOT_ZIP_OUT_FILE := SlimKernel-$(TARGET_DEVICE)-$(PLATFORM_VERSION)-$(shell date +"%Y%m%d")
 
@@ -132,6 +132,7 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+ENABLE_GRAPHITE := true
 
 # SELinux policies
 # QCOM
