@@ -390,7 +390,8 @@ PRODUCT_COPY_FILES += \
 endif
 
 # QCOM display HAL
-$(call project-set-path,qcom-display,device/lge/hammerheadcaf/display)
+#$(call project-set-path,qcom-display,device/lge/hammerheadcaf/display)
+$(call project-set-path,qcom-display,hardware/qcom/display-caf/msm8974)
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
