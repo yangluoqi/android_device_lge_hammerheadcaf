@@ -14,6 +14,17 @@
 # limitations under the License.
 #
 
+# Compiler flags
+TARGET_GCC_VERSION_EXP := 4.8
+TARGET_USE_PIPE := true
+USE_O3_OPTIMIZATIONS := true
+SUPPRES_UNUSED_WARNING := true
+KRAIT_TUNINGS := true
+ENABLE_GCCONLY := true
+#BOOT_ZIP_OUT_FILE := SlimKernel-$(TARGET_DEVICE)-$(PLATFORM_VERSION)-$(shell date +"%Y%m%d")
+
+# myflui
+
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -77,6 +88,7 @@ BOARD_USES_SECURE_SERVICES := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOOTLOADER_BOARD_NAME := hammerhead
+#TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 TARGET_BOARD_INFO_FILE := device/lge/hammerheadcaf/board-info.txt
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 TARGET_NO_RPC := true
