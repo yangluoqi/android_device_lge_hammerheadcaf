@@ -21,6 +21,8 @@ USE_O3_OPTIMIZATIONS := true
 SUPPRES_UNUSED_WARNING := true
 KRAIT_TUNINGS := true
 ENABLE_GCCONLY := true
+#GRAPHITE_OPTS := true
+STRICT_ALIASING := true
 #BOOT_ZIP_OUT_FILE := SlimKernel-$(TARGET_DEVICE)-$(PLATFORM_VERSION)-$(shell date +"%Y%m%d")
 
 # myflui
